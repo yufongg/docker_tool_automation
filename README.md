@@ -1,3 +1,6 @@
+# Prerequisites:
+1. Add user to docker group              
+2. Change file permission to make it executable
 
 # Tools used:
 1. Dockle
