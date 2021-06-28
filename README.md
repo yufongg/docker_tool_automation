@@ -8,7 +8,7 @@
 It automatically installs the 3 tools and run scan on local or pull image from dockerhub
 Also, it saves output to a json file.
 
-# Sources
+# Sources:
 centertext:
 source: https://gist.github.com/TrinityCoder/911059c83e5f7a351b785921cf7ecdaa
 print_centered() {
