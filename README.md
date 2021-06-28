@@ -1,15 +1,15 @@
-# docker_tool_automation
+
 # Tools used:
-# 1. Dockle
-# 2. Trivy
-# 3. Snyk monitor
+1. Dockle
+2. Trivy
+3. Snyk monitor
 
 #What it does:
-#It automatically installs the 3 tools and run scan on local or pull image from dockerhub
-#Also, it saves output to a json file.
+It automatically installs the 3 tools and run scan on local or pull image from dockerhub
+Also, it saves output to a json file.
 
-#centertext:
-#source: https://gist.github.com/TrinityCoder/911059c83e5f7a351b785921cf7ecdaa
+centertext:
+source: https://gist.github.com/TrinityCoder/911059c83e5f7a351b785921cf7ecdaa
 print_centered() {
      [[ $# == 0 ]] && return 1
 
@@ -34,7 +34,7 @@ print_centered() {
      return 0
 }
 
-#check whether tools are installed based on whether command/program exists.
+check whether tools are installed based on whether command/program exists.
 https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
 
 if  [ ! -x "$(command -v npm)" ] || [ ! -x "$(command -v python3)" ] || [ ! -x "$(command -v ./dockle)" ] || [ ! -x "$(command -v ./trivy)" ] || [ ! -x "$(command -v snyk)" ]
