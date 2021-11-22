@@ -12,5 +12,5 @@ It automatically installs the 3 tools and run scan on local or pull image from d
 Also, it saves output to a json file.
 
 # Credits:
-Yufong
-Raphael
+- Yufong
+- Raphael
