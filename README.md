@@ -8,8 +8,9 @@
 3. Snyk monitor
 
 # What it does:
-It automatically installs the 3 tools and run scan on local or pull image from dockerhub
-Also, it saves output to a json file.
+1. It automatically installs the 3 tools and run scan on local or pull image from dockerhub
+2. The output from trivy & dockle is automatically converted into a HTML format for easy viewing
+3. Snyk also does a scan and imports the project to your snyk account
 
 # Credits:
 - Yufong
