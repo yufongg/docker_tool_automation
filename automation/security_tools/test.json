@@ -1,0 +1,73 @@
+{
+  "image": "vulnerables/web-dvwa",
+  "summary": {
+    "fatal": 0,
+    "warn": 2,
+    "info": 4,
+    "skip": 0,
+    "pass": 10
+  },
+  "details": [
+    {
+      "code": "CIS-DI-0001",
+      "title": "Create a user for the container",
+      "level": "WARN",
+      "alerts": [
+        "Last user should not be root"
+      ]
+    },
+    {
+      "code": "DKL-DI-0006",
+      "title": "Avoid latest tag",
+      "level": "WARN",
+      "alerts": [
+        "Avoid 'latest' tag"
+      ]
+    },
+    {
+      "code": "CIS-DI-0005",
+      "title": "Enable Content trust for Docker",
+      "level": "INFO",
+      "alerts": [
+        "export DOCKER_CONTENT_TRUST=1 before docker pull/build"
+      ]
+    },
+    {
+      "code": "CIS-DI-0006",
+      "title": "Add HEALTHCHECK instruction to the container image",
+      "level": "INFO",
+      "alerts": [
+        "not found HEALTHCHECK statement"
+      ]
+    },
+    {
+      "code": "CIS-DI-0008",
+      "title": "Confirm safety of setuid/setgid files",
+      "level": "INFO",
+      "alerts": [
+        "setuid file: urwxr-xr-x usr/bin/chsh",
+        "setuid file: urwxr-xr-x usr/bin/passwd",
+        "setgid file: grwxr-xr-x usr/bin/wall",
+        "setuid file: urwxr-xr-x bin/umount",
+        "setuid file: urwxr-xr-x usr/bin/chfn",
+        "setuid file: urwxr-xr-x usr/bin/newgrp",
+        "setuid file: urwxr-xr-x bin/su",
+        "setuid file: urwxr-xr-x usr/bin/gpasswd",
+        "setuid file: urwxr-xr-x bin/ping6",
+        "setgid file: grwxr-xr-x usr/bin/expiry",
+        "setgid file: grwxr-xr-x usr/bin/chage",
+        "setuid file: urwxr-xr-x bin/mount",
+        "setuid file: urwxr-xr-x bin/ping",
+        "setgid file: grwxr-xr-x sbin/unix_chkpwd"
+      ]
+    },
+    {
+      "code": "DKL-LI-0003",
+      "title": "Only put necessary files",
+      "level": "INFO",
+      "alerts": [
+        "Suspicious directory : var/www/html/external/phpids/0.6/lib/IDS/tmp "
+      ]
+    }
+  ]
+}
